@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://muskokadigitalboost.ca/sitemap.xml
