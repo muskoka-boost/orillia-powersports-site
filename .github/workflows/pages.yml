@@ -1,0 +1,68 @@
+name: Deploy preview to GitHub Pages
+
+# Preview deploy for muskokadigitalboost.ca. Rebuilds from build.py so the
+# published HTML always matches source, then ships only the static files.
+on:
+  push:
+    branches: [claude/website-builder-setup-skill-mncfqw]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate pages
+        run: python3 build.py
+
+      - name: Fail if generated HTML is out of date
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::Committed HTML does not match build.py output. Run 'python3 build.py' and commit."
+            git --no-pager diff --stat
+            exit 1
+          fi
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp -r css js fonts media _site/
+          cp ./*.html favicon.svg robots.txt sitemap.xml _site/
+          echo "Deploying:"; find _site -type f | sort
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Turns Pages on for the repo if it is not already enabled, so no
+          # manual Settings visit is needed. Requires the repo to be public
+          # on a free plan.
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
