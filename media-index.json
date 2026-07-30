@@ -1,0 +1,44 @@
+{
+  "_note": "No brand photography was available — the previous site contained zero images and no Instagram, Facebook or Google Business Profile was supplied. These are real photographs of the actual service area from Wikimedia Commons, chosen over generic stock because 'we're genuinely local' is the site's core claim. All are credited in the footer. Replace any of them with your own photos by overwriting the file and keeping the name.",
+
+  "media/muskoka-sunset.jpg": {
+    "source": "Wikimedia Commons",
+    "title": "Muskoka Sunset",
+    "author": "Averi Cummings",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Muskoka_Sunset.jpg",
+    "content": "Sunset over a Muskoka lake, pine treeline in silhouette, warm orange sky reflected on the water",
+    "used_on": "index.html — hero background",
+    "dimensions": "1920x1280"
+  },
+  "media/orillia-waterfront.jpg": {
+    "source": "Wikimedia Commons",
+    "title": "Orillia ON",
+    "author": "P199",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Orillia_ON.JPG",
+    "content": "Boats at the docks in Couchiching Beach Park, Orillia, with the waterfront gazebo and Lake Couchiching behind",
+    "used_on": "about.html — 'Why we started' split section",
+    "dimensions": "1400x852"
+  },
+  "media/muskoka-autumn-dock.jpg": {
+    "source": "Wikimedia Commons",
+    "title": "3 Mile Lake",
+    "author": "Bbadgett",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:3_Mile_Lake.jpg",
+    "content": "Wooden dock reaching into a calm lake, framed by maples in autumn colour",
+    "used_on": "service-areas.html — 'Why local matters' split section",
+    "dimensions": "1024x702"
+  },
+  "media/lake-muskoka.jpg": {
+    "source": "Wikimedia Commons",
+    "title": "Lake Muskoka",
+    "author": "WookieInHeat",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Lake_Muskoka.jpg",
+    "content": "Open water on Lake Muskoka, treed shoreline in the distance, blue sky",
+    "used_on": "contact.html — beneath the contact methods",
+    "dimensions": "1400x1050"
+  }
+}
