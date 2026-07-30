@@ -1,0 +1,67 @@
+{
+  "_note": "Every image here is FM Recycling's own, pulled at full resolution from their existing Wix site (www.fmrecycling.ca). No stock photography was used. Three of the originals had unapplied EXIF orientation and were being served rotated; those are corrected in these copies. Replace any file with a better photo by overwriting it and keeping the filename.",
+
+  "media/yard-hero.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_3867019b52d74fd99fadcc7001d510f9f000.jpg",
+    "content": "The Orillia yard — two material handlers with grapples working a scrap pile, roll-off bins, trucks and a pickup on a grey day",
+    "processing": "Cropped to 16:9, resized to 1726px",
+    "used_on": "index.html hero background; services.html Open Graph"
+  },
+  "media/bins.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_be9329c9076b45b1ab67b6da2ca213ab~mv2_d_4032_3024_s_4_2.jpg",
+    "content": "A green FM Recycling roll-off bin (marked 'FMR SCRAP BUYERS 705-325-8118', unit 1216) beside an orange roll-off truck",
+    "processing": "EXIF orientation 3 applied — the original is served upside-down. Cropped 4:3, 1500px",
+    "used_on": "index.html services grid; services.html bin section; contact.html Open Graph"
+  },
+  "media/flatbed.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_5cd2406181f34a15bb8d2d0ddcdea237~mv2_d_4032_3024_s_4_2.jpg",
+    "content": "A flatbed trailer deck parked at the yard",
+    "processing": "EXIF orientation 3 applied — the original is served upside-down. Cropped 4:3, 1500px",
+    "used_on": "index.html services grid; services.html trucking section"
+  },
+  "media/copper-brass.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_d0b49911a9d6e222263093de42514ed1.jpg",
+    "content": "A pile of brass and copper plumbing fittings, elbows and valves with green patina",
+    "processing": "Cropped 4:3, 1100px",
+    "used_on": "index.html category card; prices.html copper table header"
+  },
+  "media/aluminium.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_def5f19519e675cdec23eb594bf0274a.jpg",
+    "content": "Aluminium tubing and extrusion scrap with red and orange painted brackets",
+    "processing": "Cropped 4:3, 1100px",
+    "used_on": "index.html category card; prices.html aluminium table header"
+  },
+  "media/stainless.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_20fb536919b3e30bb37ddd65b363dc61.jpg",
+    "content": "Stainless steel pipe and tube offcuts stacked together",
+    "processing": "Cropped 4:3, 1100px",
+    "used_on": "index.html category card; prices.html stainless table header"
+  },
+  "media/metal-shop.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_199a26a42c3849e498b46234b4efc3ad~mv2_d_3024_4032_s_4_2.jpg",
+    "content": "The metal shop bench with bolt cutters, sorted non-ferrous offcuts and the weigh station beyond",
+    "processing": "EXIF orientation 6 applied — the original is served on its side. Cropped 3:4, 1000px",
+    "used_on": "about.html; index.html services grid"
+  },
+  "media/grapple.jpg": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_18c4cce028fd407ab4d51319d7052656~mv2.jpg",
+    "content": "Close-up of a grapple attachment resting in the yard (desaturated in the original)",
+    "processing": "Cropped 16:9, 1280px",
+    "used_on": "index.html ferrous category card"
+  },
+  "media/fm-logo.png": {
+    "source": "fmrecycling.ca",
+    "original": "22668a_d7326b4287ac4227b626a4c40d6f2cea~mv2.png (new logo1_PNG.png)",
+    "content": "FM Recycling logo — yellow recycling arrows with heavy black condensed wordmark, transparent background",
+    "processing": "Palette-quantised to 32 colours (flat artwork), 142KB to 8KB, alpha preserved",
+    "used_on": "Header and footer on every page. Footer places it on a white plate because the wordmark is black."
+  }
+}
