@@ -83,7 +83,10 @@ textarea:focus-visible,summary:focus-visible{outline:3px solid var(--yellow);out
 .yard-state.is-open{color:#7ee59b}
 .yard-state.is-closed .dot{background:#e2683f}
 .yard-state.is-closed{color:#f0a184}
-@media (max-width:620px){.utility-inner{font-size:.8rem;gap:6px 14px}}
+@media (max-width:760px){
+  .utility-inner{font-size:.8rem;gap:4px 12px;flex-wrap:nowrap;justify-content:space-between}
+  .utility .sep,.utility .u-hours,.utility .u-addr{display:none}
+}
 
 /* ── Nav ──────────────────────────────────────────────── */
 .site-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:2px solid var(--black)}
@@ -109,12 +112,21 @@ textarea:focus-visible,summary:focus-visible{outline:3px solid var(--yellow);out
 
 @media (max-width:900px){
   .nav-toggle{display:grid}
-  .nav-links{position:fixed;inset:78px 0 auto 0;flex-direction:column;align-items:stretch;
-    gap:0;background:#fff;border-bottom:2px solid var(--black);padding:10px 16px 18px;
+  /* Anchored to the nav itself (top:100% of the sticky header), never a fixed
+     offset. A hardcoded top would sit under whatever height the utility bar
+     happens to wrap to and cover the logo and toggle instead of dropping
+     below them. */
+  .nav-links{position:absolute;top:calc(100% + 2px);left:0;right:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:#fff;border-bottom:2px solid var(--black);padding:10px 16px 18px;
     box-shadow:var(--shadow-lg);transform:translateY(-8px);opacity:0;pointer-events:none;
-    transition:opacity .18s,transform .18s;max-height:calc(100dvh - 78px);overflow-y:auto}
+    transition:opacity .18s,transform .18s;max-height:75dvh;overflow-y:auto}
   .nav-links.is-open{transform:none;opacity:1;pointer-events:auto}
-  .nav-links a:not(.btn){padding:14px 12px;font-size:1.05rem;border-bottom:1px solid var(--line)}
+  /* display:block — these are inline <a>s, so vertical padding and the divider
+     would otherwise hug the text box instead of spanning the row. */
+  .nav-links a:not(.btn){display:block;padding:14px 12px;font-size:1.05rem;
+    border-bottom:1px solid var(--line)}
+  .nav-links li{display:block}
   .nav-cta{margin:14px 0 0}
 }
 

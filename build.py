@@ -178,11 +178,11 @@ def nav(active):
 <div class="utility">
   <div class="utility-inner">
     <span class="yard-state" data-yard-state hidden></span>
-    <span>Yard: Mon–Fri 8am–5pm &middot; Sat 8am–12pm</span>
+    <span class="u-hours">Yard: Mon–Fri 8am–5pm &middot; Sat 8am–12pm</span>
     <span class="sep" aria-hidden="true">|</span>
     <a href="tel:{BIZ['phone_href']}">{BIZ['phone_display']}</a>
     <span class="sep" aria-hidden="true">|</span>
-    <span>{BIZ['street']}, {BIZ['city']}</span>
+    <span class="u-addr">{BIZ['street']}, {BIZ['city']}</span>
   </div>
 </div>
 
